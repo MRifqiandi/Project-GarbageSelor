@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.6rem 1.6rem;
+  gap: 1em;
+  background-color: #22aa99;
+  width: 100%;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #22aa99;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding-bottom: 5em;
+}
+
+.main-content-date {
+  padding-left: 2em;
+}
+
+.main-content-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 111em;
+}
+
+.main-content-bio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 1em;
+  border-radius: 14px;
+}
+
+.main-content-bio li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-content-bio ul {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+  background-color: #d9d9d9;
+  padding: 1.8em 2.7em;
+  border-radius: 14px;
+}
+
+.main-content-bio h1 {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.main-content-pickup {
+  display: none;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #22aa99;
+  padding: 0.5em 1em;
+}
+
+/* styles Hamburger */
+
+.menu-toggle {
+  display: none;
+}
+
+.bar {
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  margin: 4px 0;
+  transition: 0.3s; /* Menambahkan transisi */
+}
+
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+/* .navbar {
+  display: flex;
+  flex-direction: column;
+  order: 2;
+} */
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+/* Menambahkan CSS untuk tombol hamburger saat aktif */
+.menu-toggle.active .bar:nth-child(1) {
+  transform: translateY(5px) rotate(45deg);
+}
+
+.menu-toggle.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.active .bar:nth-child(3) {
+  transform: translateY(-5px) rotate(-45deg);
+}
+
+/* CSS untuk menu di bawah 768px */
+@media screen and (max-width: 768px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    gap: 0.5rem;
+    background-color: #333;
+    height: max-content;
+    padding: 5px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+
+  .navbar {
+    padding-right: 2em;
+  }
+
+  .menu-toggle {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+  }
+
+  .date-time {
+    display: none;
+  }
+
+  .menu.active {
+    display: flex;
+    flex-direction: column;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+}
