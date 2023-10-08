@@ -2,7 +2,7 @@
 $host = "localhost"; 
 $username = "root"; 
 $password = "";
-$database = "login";
+$database = "Garbage_Selor";
 
 $conn = mysqli_connect($host, $username, $password, $database);
 

@@ -1,87 +1,36 @@
-function updateClock() {
-  var now = new Date();
-  var dname = now.getDay(),
-    mo = now.getMonth(),
-    dnum = now.getDate(),
-    yr = now.getFullYear(),
-    hou = now.getHours(),
-    min = now.getMinutes(),
-    sec = now.getSeconds(),
-    pe = "AM";
+function updateWaktu() {
+  var sekarang = new Date();
 
-  if (hou == 0) {
-    hou = 12;
-  }
+  // Mendapatkan hari
+  var hari = sekarang.toLocaleDateString('id-ID', { weekday: 'long' });
 
-  if (hou > 12) {
-    hou = hou - 12;
-    pe = "PM";
-  }
+  // Mendapatkan tanggal, bulan, dan tahun
+  var tanggal = sekarang.getDate();
+  var options = { month: 'long', year: 'numeric', locale: 'id-ID' };
+  var bulanTahun = new Intl.DateTimeFormat('id-ID', options).format(sekarang);
 
-  Number.prototype.pad = function (digits) {
-    for (var n = this.toString(); n.length < digits; n = 0 + n);
-    return n;
-  };
+  // Mendapatkan waktu
+  var jam = sekarang.getHours();
+  var menit = sekarang.getMinutes();
+  var detik = sekarang.getSeconds();
 
-  var months = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "Augest",
-    "September",
-    "October",
-    "November",
-    "December",
-  ];
+  // Format jam, menit, dan detik menjadi dua digit (misal: 09:05:12)
+  jam = (jam < 10) ? "0" + jam : jam;
+  menit = (menit < 10) ? "0" + menit : menit;
+  detik = (detik < 10) ? "0" + detik : detik;
 
-  var week = [
-    "Sunday",
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday",
-  ];
+  var waktu = jam + ":" + menit + ":" + detik;
 
-  var ids = [
-    "day-name",
-    "month",
-    "day-num",
-    "year",
-    "hour",
-    "minutes",
-    "seconds",
-    "period",
-  ];
-  var values = [
-    week[dname],
-    months[mo],
-    dnum.pad(2),
-    yr,
-    hou.pad(2),
-    min.pad(2),
-    sec.pad(2),
-    pe,
-  ];
-
-  for (var i = 0; i < ids.length; i++)
-    document.getElementById(ids[i]).firstChild.nodeValue = values[i];
-}
-function initClock() {
-  updateClock();
-  window.setInterval("updateClock", 1);
+  // Memasukkan informasi ke dalam elemen HTML
+  document.getElementById("hari").textContent = hari;
+  document.getElementById("tanggal").textContent = tanggal;
+  document.getElementById("bulan").textContent = bulanTahun;
+  // document.getElementById("tahun").textContent = sekarang.getFullYear();
+  document.getElementById("waktu").textContent = waktu;
 }
 
-// Hamburger button example
-const menuToggle = document.querySelector(".menu-toggle");
-const menu = document.querySelector(".menu");
+// Memanggil fungsi updateWaktu setiap detik
+setInterval(updateWaktu, 1000);
 
-menuToggle.addEventListener("click", () => {
-  menuToggle.classList.toggle("active"); // Tambahkan class "active" pada tombol hamburger
-  menu.classList.toggle("active"); // Tambahkan class "active" pada menu
-});
+// Memanggil fungsi updateWaktu untuk pertama kali saat halaman dimuat
+updateWaktu();

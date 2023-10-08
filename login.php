@@ -3,7 +3,7 @@ require 'connection.php';
 $username = $_POST["username"];
 $password = $_POST["password"];
 
-$query_sql = "SELECT * FROM users
+$query_sql = "SELECT * FROM login
             WHERE username = '$username' AND password = '$password'";
 
 $result = mysqli_query($conn, $query_sql);

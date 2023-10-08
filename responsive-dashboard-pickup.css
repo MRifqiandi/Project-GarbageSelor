@@ -7,12 +7,20 @@
 
   body {
     background: linear-gradient(
-      #22aa99 50%,
+      #0cb062 50%,
       #f6f3f3 50%
     ); /* 50% atas merah, 50% bawah hijau */
     background-size: 100% 100%; /* Atur ukuran latar belakang ke 100% x 100% */
     background-repeat: no-repeat;
   }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 5em;
+  }
+
   .main-content {
     display: flex;
     justify-content: center;

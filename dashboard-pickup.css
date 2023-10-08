@@ -8,6 +8,19 @@ ul {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+button {
+  border: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -21,7 +34,7 @@ header {
   justify-content: space-between;
   padding: 0.6rem 1.6rem;
   gap: 1em;
-  background-color: #22aa99;
+  background-color: #0cb062;
   width: 100%;
 }
 
@@ -30,36 +43,34 @@ header {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: #22aa99;
+  background-color: #0cb062;
 }
 
 main {
   display: flex;
   flex-direction: column;
   gap: 1em;
-  padding-bottom: 5em;
-}
-
-.main-content-date {
-  padding-left: 2em;
+  /* padding-bottom: 5em; */
 }
 
 .main-content-header {
   display: flex;
   align-items: center;
   justify-content: center;
+  /* padding-top: 0.5em; */
 }
 
 .main-content {
   display: flex;
   flex-direction: column;
-  gap: 111em;
+  /* gap: 111em; */
 }
 
 .main-content-bio {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   padding: 0 1em;
   border-radius: 14px;
 }
@@ -85,7 +96,42 @@ main {
 }
 
 .main-content-pickup {
-  display: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding-top: 19px;
+}
+
+.main__content__pickup-truck {
+  display: flex;
+  /* justify-content: space-between; */
+  background-color: #22aa99;
+  padding: 33px 36px;
+  border-radius: 14px;
+  gap: 48px;
+}
+
+.main__content__pickup__truck-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-left: 47px;
+}
+
+.main__content__pickup-amroll {
+  display: flex;
+  background-color: #22aa99;
+  padding: 33px 36px;
+  border-radius: 14px;
+  gap: 67px;
+}
+
+.main__content__pickup__amroll-text {
+  display: flex;
+  flex-direction: column;
 }
 
 footer {
