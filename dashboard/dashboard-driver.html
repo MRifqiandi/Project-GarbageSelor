@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/dashboard-driver.css" />
+    <!-- <link rel="stylesheet" href="style-date-time.css" /> -->
+    <link rel="stylesheet" href="../styles/responsive-dashboard-driver.css" />
+  </head>
+  <body onload="initClock()">
+    <div class="container">
+      <header>
+        <div class="date-time">
+          <div class="tanggal-hari">
+            <span id="hari"></span> , 
+             <span id="tanggal"></span>
+            <span id="bulan"></span>
+            <span id="tahun"></span>
+        </div>
+        <div class="jam">
+            <span id="waktu"></span>
+        </div>
+      </div>
+        <div class="header-content">
+          <div class="header-content-title">
+            <h1>GarBage</h1>
+            <p>Truk Sampah Tanjung Selor</p>
+          </div>
+        </div>
+        <div class="navbar">
+          <div class="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+          <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Settings</a></li>
+          </ul>
+        </div>
+      </header>
+      <main>
+        
+
+        <div class="main-content">
+          <h1>Dashboard Driver</h1>
+          <div class="notification">
+            
+    <p>Status Penjemputan: <span id="pickup-status">Menunggu Persetujuan Admin</span></p>
+
+          </div>
+          
+          <div class="main-content-bio">
+            <ul>
+              <li id="name">
+                <label for="name">Nama</label>
+                <h1 name="name">Muhammad Rifqiandi</h1>
+              </li>
+              <li id="date-main-content">
+                <label for="date-main-content">Tanggal</label>
+                <h1 name="date-main-content">23 Agustus 2003</h1>
+              </li>
+              <li id="vehicle">
+                <label for="vehicle">Jenis Kendaraan</label>
+                <h1 name="vehicle">-</h1>
+              </li>
+              <li id="count">
+                <label for="count">Banyak Angkutan</label>
+                <h1 name="count">-</h1>
+              </li>
+            </ul>
+            <!-- <div class="main-content-pickup">
+              <button
+                type="submit"
+                class="main__content__pickup-truck"
+                id="truck"
+              >
+                <img src="img/truck.png" alt="truck" />
+                <div class="main__content__pickup__truck-text">
+                  <a href="#">Penjemputan menggunakan truck</a>
+                  <label for="alamat">---</label>
+                </div>
+              </button>
+
+              <button
+                type="submit"
+                class="main__content__pickup-amroll"
+                id="amroll"
+              >
+                <img src="img/amroll.png" alt="amroll" />
+                <div class="main__content__pickup__amroll-text">
+                  <a href="#">Penjemputan menggunakan amroll</a>
+                  <label for="alamat">---</label>
+                </div>
+              </button>
+            </div> -->
+          </div>
+        </div>
+      </main>
+
+    <script src="../script/driver.js"></script>
+    <script src="../utils/date.js"></script>
+    <script src="../utils/hamburger-button.js"></script>
+    
+  </body>
+</html>

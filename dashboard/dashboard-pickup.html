@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/dashboard-pickup.css" />
+    <link rel="stylesheet" href="../styles/style-date-time.css" />
+    <link rel="stylesheet" href="../styles/responsive-dashboard-pickup.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="date-time">
+          <div class="tanggal-hari">
+            <span id="hari"></span> , 
+             <span id="tanggal"></span>
+            <span id="bulan"></span>
+            <span id="tahun"></span>
+        </div>
+        <div class="jam">
+            <span id="waktu"></span>
+        </div>
+      </div>
+
+       
+        <div class="header-content">
+          <div class="header-content-title">
+            <h1>GarBage</h1>
+            <p>Truk Sampah Tanjung Selor</p>
+          </div>
+        </div>
+        <div class="navbar">
+          <div class="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+          <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Settings</a></li>
+          </ul>
+        </div>
+      </header>
+      <main>
+        <div class="main-content-header">
+          <h1>Data Angkut</h1>
+        </div>
+
+        <div class="main-content">
+          <h1>Selamat datang </h1> 
+          <div class="main-content-bio">
+            <div id="user-data">
+              <p><strong>Nama:</strong> <span id="nama-pengguna"></span></p>
+              <p><strong>Tanggal Lahir:</strong> <span id="tanggal-pengguna"></span></p>
+              <p><strong>Alamat:</strong> <span id="alamat-pengguna"></span></p>
+              <p><strong>Nomor Telepon:</strong> <span id="nomor-telepon-pengguna"></span></p>
+          </div>
+            
+            <div class="main-content-pickup">
+              <button
+                type="submit"
+                class="main__content__pickup-truck"
+                id="truck"
+              >
+                <img src="../img/truck.png" alt="truck" />
+                <div class="main__content__pickup__truck-text">
+                  <a href="#">Penjemputan menggunakan truck</a>
+                  <label for="alamat">---</label>
+                </div>
+              </button>
+
+            <button
+                type="submit"
+                class="main__content__pickup-amroll"
+                id="amroll"
+              >
+                <img src="../img/amroll.png" alt="amroll" />
+                <div class="main__content__pickup__amroll-text">
+                  <a href="#">Penjemputan menggunakan amroll</a>
+                  <label for="alamat">---</label>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <img src="../img/home-button.png" alt="home" />
+        <img src="../img/button-go.png" alt="go-butoon" />
+        <img src="../img/profile-button.png" alt="profile" />
+      </footer>
+    </div>
+
+    <script src="../script/user-data.js"></script>
+    <script src="../script/script.js"></script>
+    <script src="../utils/date.js"></script>
+    <script src="../utils/hamburger-button.js"></script>
+  </body>
+</html>

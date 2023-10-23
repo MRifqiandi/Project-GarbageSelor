@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Interface</title>
+</head>
+<body>
+    <h1>Admin Interface</h1>
+    <button id="approveButton">Setujui Penjemputan</button>
+    <script>
+        const approveButton = document.getElementById("approveButton");
+
+        approveButton.addEventListener("click", () => {
+            // Ketika tombol "Setujui Penjemputan" diklik
+            const message = "Admin telah menyetujui penjemputan.";
+            localStorage.setItem("notification", message); // Simpan notifikasi di Local Storage
+            window.alert(message); // Tampilkan notifikasi sederhana
+        });
+    </script>
+</body>
+</html>

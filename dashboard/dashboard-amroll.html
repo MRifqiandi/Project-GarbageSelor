@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GarBageSelor</title>
+    <link rel="stylesheet" href="../styles/dashboard-truck.css" />
+    <link rel="stylesheet" href="../styles/responsive-dashboard-truck.css" />
+    <link rel="stylesheet" href="../styles/style-date-time.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="date-time">
+          <div class="tanggal-hari">
+            <span id="hari"></span> , 
+             <span id="tanggal"></span>
+            <span id="bulan"></span>
+            <span id="tahun"></span>
+        </div>
+        <div class="jam">
+            <span id="waktu"></span>
+        </div>
+      </div>
+        <div class="header-content">
+          <div class="header-content-title">
+            <h1>GarBage</h1>
+            <p>Truk Sampah Tanjung Selor</p>
+          </div>
+        </div>
+        <div class="navbar">
+          <div class="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+          <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Settings</a></li>
+          </ul>
+        </div>
+      </header>
+      <main>
+        <div class="main-content-header">
+          <h1>Data Angkut</h1>
+        </div>
+
+        <div class="main-content">
+          <div class="main-content-bio">
+            <ul>
+              <li id="name">
+                <label for="name">Nama</label>
+                <h1 name="name">Muhammad Rifqiandi</h1>
+              </li>
+              <li id="date-main-content">
+                <label for="date-main-content">Tanggal</label>
+                <h1 name="date-main-content">23 Agustus 2003</h1>
+              </li>
+              <li id="vehicle">
+                <label for="vehicle">Jenis Kendaraan</label>
+                <h1 name="vehicle">-</h1>
+              </li>
+              <li id="count">
+                <label for="count">Banyak Angkutan</label>
+                <h1 name="count">-</h1>
+              </li>
+            </ul>
+            <div class="main-content-pickup">
+              <div class="main__content__pickup-truck">
+                <img src="../img/amroll.png" alt="truck" />
+                <div class="main__content__pickup__truck-text">
+                  <a href="#">Unggah permintaan penjemputan</a>
+                  <label for="alamat">---</label>
+                </div>
+              </div>
+              <div class="call">
+                <img src="../img/call.png" alt="call" />
+                <h1>Hubungi</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+    </main>
+      <footer>
+        <img src="../img/home-button.png" alt="home" />
+        <img src="../img/button-go.png" alt="go-butoon" />
+        <img src="../img/profile-button.png" alt="profile" />
+      </footer>
+    </div>
+    <script src="../utils/date.js"></script>
+  </body>
+</html>
