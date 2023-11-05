@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driver Interface</title>
+</head>
+<body>
+    <h1>Driver Interface</h1>
+    <div id="notification-container">
+        <p id="notification-text">Tunggu notifikasi dari admin...</p>
+    </div>
+    <script>
+        const notificationText = document.getElementById("notification-text");
+
+        // Fungsi untuk memeriksa notifikasi dari Local Storage
+        function checkNotification() {
+            const notification = localStorage.getItem("notification");
+            if (notification) {
+                notificationText.textContent = notification;
+                localStorage.removeItem("notification"); // Hapus notifikasi setelah ditampilkan
+            }
+        }
+
+        // Periksa notifikasi saat halaman dimuat
+        window.addEventListener("load", checkNotification);
+
+        // Periksa notifikasi secara berkala
+        setInterval(checkNotification, 1000);
+    </script>
+</body>
+</html>
