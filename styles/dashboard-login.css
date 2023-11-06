@@ -101,7 +101,7 @@ nav div img{
 	top: 0;
 	width: 100%;
 	height: 100%;
-	background: url(img/pattern.png);
+	background: url(/img/pattern.png);
 }
 .banner a.weblink {
 	color:#ffffff;
@@ -265,11 +265,11 @@ nav div img{
 	top: 0;
 	width: 100%;
 	height: 100%;
-	background: url(img/pattern.png);
+	background: url(/img/pattern.png);
 }
 .bx-prev {
 	left: -90px !important;
-	background: url(img/arrow-left.png) no-repeat !important;
+	background: url(/img/arrow-left.png) no-repeat !important;
 	background-size: auto auto !important;
 	background-size: 100% 100% !important;
 }

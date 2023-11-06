@@ -1,4 +1,11 @@
 /* Gaya untuk header konten */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
 .main-content-header {
   display: flex;
   justify-content: space-between;
@@ -7,12 +14,14 @@
   color: #fff;
   padding: 1.2em;
   text-align: center;
+  font-family: Arial, sans-serif;
 }
 
 .main-content-bio {
   background-color: #f5f5f5;
   border: 1px solid #ccc;
   padding: 20px;
+  font-family: Arial, sans-serif;
 }
 
 /* Gaya untuk tombol pickup */
@@ -23,6 +32,7 @@
   padding: 10px 20px;
   margin: 10px;
   cursor: pointer;
+  
 }
 
 .rounded-image {

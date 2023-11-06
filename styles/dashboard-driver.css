@@ -2,13 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Arial", sans-serif;
   }
   .main-content-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #000000;
-    color: #ffffff;
+    color: #ffffff; 
     padding: 1.2em;
     text-align: center;
   }
@@ -53,7 +54,8 @@
     justify-content: space-between;
     padding: 0.6rem 1.6rem;
     gap: 1em;
-    background-color: #186F65;
+    color: #ffffff;
+    background-color: #000000;
     width: 100%;
   }
   
@@ -62,7 +64,8 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: #186F65;
+    color: #ffffff;
+    background-color: #000000;
   }
   
   main {
@@ -107,12 +110,15 @@
   }
   
   .main-content-bio ul {
-    display: flex;
-    flex-direction: column;
-    gap: 27px;
-    background-color: #d9d9d9;
-    padding: 1.8em 2.7em;
-    border-radius: 14px;
+    
+      display: flex;
+      flex-direction: column;
+      gap: 27px;
+      background-color: #000000; 
+      padding: 1.8em 2.7em;
+      border-radius: 14px;
+    
+    
   }
   
   .main-content-bio h1 {
@@ -132,7 +138,7 @@
   .main__content__pickup-truck {
     display: flex;
     /* justify-content: space-between; */
-    background-color: #186F65;
+    background-color : linear-gradient(to right, #113946, #bababa, #ffffff);
     padding: 33px 36px;
     border-radius: 14px;
     gap: 48px;
@@ -148,7 +154,7 @@
   
   .main__content__pickup-amroll {
     display: flex;
-    background-color: #186F65;
+    background-color: linear-gradient(to right, #113946, #bababa, #ffffff);
     padding: 33px 36px;
     border-radius: 14px;
     gap: 67px;
@@ -172,7 +178,7 @@
 
   .notification-container {
     padding: 2em;
-    background-color: #f6f3f3;
+    background-color: #000000; /* Ganti latar belakang menjadi hitam */
     font-size: 20px;
     border-radius: 14px;
   }
