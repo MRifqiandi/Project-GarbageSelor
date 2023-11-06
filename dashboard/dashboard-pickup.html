@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="../styles/dashboard-pickup.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GarBage - Truk Sampah Tanjung Selor</title>
+  </head>
+  <body>
+    <main class="container">
+      <div class="main-content-header">
+        <div class="date-time">
+          <div class="tanggal-hari">
+            <span id="hari"></span> ,
+            <span id="tanggal"></span>
+            <span id="bulan"></span>
+            <span id="tahun"></span>
+          </div>
+          <div class="jam">
+            <span id="waktu"></span>
+          </div>
+        </div>
+        <h1>Data Angkut</h1>
+      </div>
+
+      <div class="main-content">
+        <h1>Selamat datang</h1>
+        <div class="main-content-bio">
+          <div id="user-data">
+            <p><strong>Nama:</strong> <span id="nama-pengguna"></span></p>
+            <p>
+              <strong>Tanggal Lahir:</strong>
+              <span id="tanggal-pengguna"></span>
+            </p>
+            <p><strong>Alamat:</strong> <span id="alamat-pengguna"></span></p>
+            <p>
+              <strong>Nomor Telepon:</strong>
+              <span id="nomor-telepon-pengguna"></span>
+            </p>
+          </div>
+          
+          <div class="main-content-pickup">
+            <button class="main__content__pickup-truck" id="truck" name="vehicle">truck</button>
+            <button class="main__content__pickup-amroll" id="amroll" name="vehicle">amroll</button>
+            <ul id="notifications"></ul>
+            <button>
+              <a href="../dashboard/dashboard-history.html">History</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="../script/user-data.js"></script>
+    <script src="../script/script.js"></script>
+    <script src="../utils/date.js"></script>
+    <script src="../utils/hamburger-button.js"></script>
+    <script src="../script/user_submissions.js"></script>
+    <script src="../script/history-user.js"></script>
+
+  </body>
+</html>

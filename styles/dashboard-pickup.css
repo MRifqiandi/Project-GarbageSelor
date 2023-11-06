@@ -1,0 +1,35 @@
+/* Gaya untuk header konten */
+.main-content-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000000;
+  color: #fff;
+  padding: 1.2em;
+  text-align: center;
+}
+
+.main-content-bio {
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+
+/* Gaya untuk tombol pickup */
+.main__content__pickup-truck, .main__content__pickup-amroll {
+  background-color: #113946;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.rounded-image {
+  width: 200px;
+  height: 200px; 
+  border-radius: 50%; 
+}
+
+
+

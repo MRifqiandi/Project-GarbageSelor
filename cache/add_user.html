@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="admin-add-user.css">
+</head>
+    <body onload="initClock()">
+        <div class="container">
+          <header>
+            <div class="date-time">
+              <div class="tanggal-hari">
+                <span id="hari"></span> , 
+                 <span id="tanggal"></span>
+                <span id="bulan"></span>
+                <span id="tahun"></span>
+            </div>
+            <div class="jam">
+                <span id="waktu"></span>
+            </div>
+          </div>
+    
+           
+            <div class="header-content">
+              <div class="header-content-title">
+                <h1>GarBage</h1>
+                <p>Truk Sampah Tanjung Selor</p>
+              </div>
+            </div>
+            <div class="navbar">
+              <div class="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+              </div>
+              <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Settings</a></li>
+              </ul>
+            </div>
+          </header>
+         
+    <h1>Admin Panel</h1>
+    <form id="user-form">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br>
+        <button type="button" onclick="addUser()">Tambah Pengguna</button>
+    </form>
+
+    <div id="result"></div>
+
+    <script src="add_user.js">
+
+    </script>
+</body>
+</html>

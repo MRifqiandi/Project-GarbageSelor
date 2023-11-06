@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+<body>
+
+    <!-- nav -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+          <a class="navbar-brand" href="#">GarBage</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+              </ul>
+          </div>
+      </div>
+    </nav>
+
+    <div class="text-center">
+        <h1>Selamat datang, User!</h1>
+        <div>
+            <button class="btn btn-secondary" id="showUserRequestHistory">Lihat Riwayat Permintaan</button>
+        </div>
+    </div>
+
+    <div id="userRequestHistory" class="hidden text-center">
+      <h2>Riwayat Permintaan Penjemputan Anda</h2>
+      <ul id="userRequestHistoryList"></ul>
+    </div>
+
+    <script src="../js/bootstrap.min.js"></script>
+
+    <script src="../script/history-user.js"></script>
+    <script src="../script/user_submissions.js"></script>
+</body>
+</html>

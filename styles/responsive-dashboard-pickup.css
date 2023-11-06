@@ -1,0 +1,104 @@
+@media (min-width: 768px) {
+  a {
+    text-decoration: none;
+    color: #000000;
+    cursor: pointer;
+  }
+
+  body {
+    background: linear-gradient(
+      #0cb062 50%,
+      #f6f3f3 50%
+    ); /* 50% atas merah, 50% bawah hijau */
+    background-size: 100% 100%; /* Atur ukuran latar belakang ke 100% x 100% */
+    background-repeat: no-repeat;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 5em;
+  }
+
+  .main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em 1em;
+  }
+
+  .main-content-header {
+    display: none;
+  }
+
+  .main-content-date {
+    display: none;
+  }
+
+  .main-content-bio {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding: 2em 3em;
+    align-items: center;
+    gap: 28px;
+  }
+
+  .main-content-bio ul {
+    display: flex;
+    justify-content: flex-start;
+
+    background-color: #d9d9d9;
+    padding: 3em 4em;
+  }
+
+  .main-content-bio li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5em;
+  }
+
+  .main-content-pickup {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .main__content__pickup-truck {
+    display: flex;
+    background-color: #22aa99;
+    padding: 51px 76px;
+    border-radius: 14px;
+    gap: 67px;
+  }
+
+  .main__content__pickup__truck-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .main__content__pickup-amroll {
+    display: flex;
+    background-color: #22aa99;
+    padding: 51px 76px;
+    border-radius: 14px;
+    gap: 67px;
+  }
+
+  .main__content__pickup__amroll-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  footer {
+    display: none;
+  }
+}

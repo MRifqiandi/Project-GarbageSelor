@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+<body>
+
+    <!-- nav -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">GarBage Selor</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                </ul>
+            </div>
+            <div class="jam">
+                <span id="waktu"class="text-light"></span>
+            </div>
+        </div>
+      </nav>
+
+
+      <div class="card text-center">
+        <div class="card-header">
+          Notification
+        </div>
+        <div class="main-content-pickup">
+          <div class="main__content__pickup-truck">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Minta Penjemputan menggunakan amroll ?</h5>
+            <img src= "/img/amroll.jpg" class="img-fluid" alt="sampah" margin = "20" width="300" height="300" />
+          </div>
+          <div class="main__content__pickup__truck-text">
+            <a href="#">Unggah permintaan penjemputan</a>
+          </div>
+            </div>
+          </div>
+        </div>
+        
+
+
+ <!-- jam -->
+ <script>
+    function updateClock() {
+        const now = new Date();
+        const waktu = now.toLocaleTimeString();
+        document.getElementById("waktu").innerText = waktu;
+    }  
+    
+    // Perbarui jam setiap detik
+    setInterval(updateClock, 1000);
+    
+    // Panggil updateClock() agar jam tampil segera saat halaman dimuat
+    updateClock();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GarBage - Truk Sampah Tanjung Selor</title>
+  <link rel="stylesheet" href="../styles/dashboard-admin.css">
+  
+</head>
+<body onload="initClock()">
+  <div class="container">
+    <header>
+      <h1>GarBage</h1>
+      <p>Truk Sampah Tanjung Selor</p>
+    </header>
+    <main>
+      <div class="main-content-header">
+        <h1>Data Angkut</h1>
+      </div>
+      <ul id="notifications"></ul>
+      <div>
+        <label for="accept">Terima:</label>
+        <input type="radio" name="action" id="accept" value="terima" />
+        <label for="reject">Tolak:</label>
+        <input type="radio" name="action" id="reject" value="tolak" />
+        <button id="process">Submit</button>
+      </div>
+      <div class="main-content-bio">
+        <h1>Nama: <span id="nama-pengguna"></span></h1>
+        <h1>Tanggal Lahir: <span id="tanggal-pengguna"></span></h1>
+        <h1>Alamat: <span id="alamat-pengguna"></span></h1>
+        <h1>Nomor Telepon: <span id="nomor-telepon-pengguna"></span></h1>
+        <div class="main-content-pickup">
+          <input type="text" id="messageInput" placeholder="Masukkan pesan untuk driver..." />
+          <button type="submit" id="sendMessageButton">Kirim Pesan ke Driver</button>
+          <h2>Riwayat Penjemputan</h2>
+          <ul id="pickupHistory"></ul>
+        </div>
+      </div>
+      <div id="button-add-user" class="button-add-user">
+        <button type="submit">Tambah Pengguna</button>
+      </div>
+    </main>
+
+  </div>
+  <script src="../script/admin.js"></script>
+  <script src="../utils/hamburger-button.js"></script>
+  <script src="../utils/date.js"></script>
+  <script src="../script/admin_submissions.js"></script>
+</body>
+</html>
