@@ -10,8 +10,7 @@
     "start": "concurrently \"npm run start-backend1\" \"npm run start-backend2\"",
     "start-backend1": "node server-notifications-driver.js",
     "start-backend2": "node server-pickup.js",
-    "build": "cp src/*.html src/*.css src/*.js dist/"
-
+    "build": ""
   },
   "devDependencies": {
     "concurrently": "^7.0.0"
