@@ -1,0 +1,17 @@
+{
+    "name": "asus/project-garbage-selor",
+    "autoload": {
+        "psr-4": {
+            "Asus\\ProjectGarbageSelor\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "MRifqiandi",
+            "email": "11211063@student.itk.ac.id"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "^10.4"
+    }
+}

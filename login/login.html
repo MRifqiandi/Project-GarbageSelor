@@ -9,7 +9,7 @@
   <body>
     <div class="container">
       <main>
-        <form id="login-form" action="../src/login.php" method="POST">
+        <form action="../src/login.php" method="POST">
           <div class="main-title">
             <h1>GarBage</h1>
             <h3>Truk Sampah Tanjung Selor</h3>
@@ -20,18 +20,19 @@
               id="username"
               name="username"
               placeholder="username"
+              class="username-input"
             />
             <input
               type="password"
               id="password"
               name="password"
               placeholder="password"
+              class="password-input"
             />
             <div class="main_content_button">
               <button type="submit" name="login" id="button-content-login">
                 Login
               </button>
-              <a href="#">Lupa Sandi ?</a>
             </div>
           </div>
         </form>

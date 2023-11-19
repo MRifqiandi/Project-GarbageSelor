@@ -19,8 +19,11 @@ $nomor_telepon = $_POST["nomor_telepon"];
 $username = $_POST["username"];
 $password = $_POST["password"];
 
-// Simpan data ke tabel "users"
-$sql = "INSERT INTO user_data (nama, tanggal, alamat, nomor_telepon, username, password) VALUES ('$nama', '$tanggal', '$alamat', '$nomor_telepon', '$username', '$password')";
+// Tetapkan peran "user"
+$role = "user";
+
+// Simpan data ke tabel "user_data" dengan peran yang ditetapkan
+$sql = "INSERT INTO user (nama, tanggal, alamat, nomor_telepon, username, password, role) VALUES ('$nama', '$tanggal', '$alamat', '$nomor_telepon', '$username', '$password', '$role')";
 
 if ($conn->query($sql) === TRUE) {
     echo "Pengguna berhasil ditambahkan.";

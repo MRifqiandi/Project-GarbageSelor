@@ -1,59 +1,74 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+/* login.css */
 
-a {
-  text-decoration: none;
-  color: #ffffff;
-}
-
-button {
-  padding: 9px 90px;
-  background-color: #22aa99;
-  border: none;
-  border-radius: 7px;
-}
-
-input {
-  padding: 0.7em;
-  background-color: #000000;
-  color: #ffffff;
-}
-
-main {
+body {
+  background-image: linear-gradient(to right, #113946, #bababa, #ffffff);
+  font-family: arial, sans-serif;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  gap: 5em;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
 }
+
+.container {
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 25px;
+  border-radius: 5px;
+  text-align: center;
+  font-family: arial, sans-serif;
+  border-top: 5px solid #186f65;
+}
+
 
 .main-title {
-  text-align: center;
-  padding-top: 8em;
+  color: #000000;
+}
+
+.main-title h1 {
+  font-size: 36px;
+  margin: 0;
+}
+
+.main-title h3 {
+  font-size: 18px;
+  color: #252525;
 }
 
 .main-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 0.9rem;
-  background-color: #000000;
-  padding: 3em 4em;
-  border-radius: 7px;
+  margin-top: 20px;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 2%;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  outline: none;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-color: #186f65;
 }
 
 .main_content_button {
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
+  margin-top: 20px;
   text-align: center;
-  padding-top: 1.5em;
 }
 
-button:hover {
-  background-color: #22aa32;
+#button-content-login {
+  background-color: focus #186f65;
+  color: #ffffff;
+  padding: 8px 90px;
+  border: none;
+  border-radius: 5px;
   cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#button-content-login:hover {
+  background-color: #186f65;
 }

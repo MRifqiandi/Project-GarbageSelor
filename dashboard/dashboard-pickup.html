@@ -1,16 +1,16 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="../styles/dashboard-pickup.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="../styles/dashboard-pickup.css" />
-    <link rel="stylesheet" href="../styles/style-date-time.css" />
-    <link rel="stylesheet" href="../styles/responsive-dashboard-pickup.css" />
+    <title>GarBage - Truk Sampah Tanjung Selor</title>
   </head>
   <body>
-    <div class="container">
-      <header>
+    <main class="container">
+      <div class="main-content-header">
         <div class="date-time">
           <div class="tanggal-hari">
             <span id="hari"></span> ,
@@ -22,103 +22,48 @@
             <span id="waktu"></span>
           </div>
         </div>
+        <h1>Data Angkut</h1>
+      </div>
 
-        <div class="header-content">
-          <div class="header-content-title">
-            <h1>GarBage</h1>
-            <p>Truk Sampah Tanjung Selor</p>
+      <div class="main-content">
+        <h1>Selamat datang</h1>
+        <div class="main-content-bio">
+          <div id="user-data">
+            <p><strong>Nama:</strong> <span id="nama-pengguna"></span></p>
+            <p>
+              <strong>Tanggal Lahir:</strong>
+              <span id="tanggal-pengguna"></span>
+            </p>
+            <p><strong>Alamat:</strong> <span id="alamat-pengguna"></span></p>
+            <p>
+              <strong>Nomor Telepon:</strong>
+              <span id="nomor-telepon-pengguna"></span>
+            </p>
+          </div>
+
+          <div class="main-content-pickup">
+            <button
+              class="main__content__pickup-truck"
+              id="truck"
+              name="vehicle"
+            >
+              truck
+            </button>
+            <button
+              class="main__content__pickup-amroll"
+              id="amroll"
+              name="vehicle"
+            >
+              amroll
+            </button>
+            <ul id="notifications"></ul>
+            <button>
+              <a href="../dashboard/dashboard-history.html">History</a>
+            </button>
           </div>
         </div>
-        <div class="navbar">
-          <div class="menu-toggle">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-          </div>
-          <ul class="menu">
-            <li><a href="dashboard-pickup.html">Home</a></li>
-          </ul>
-        </div>
-      </header>
-      <main>
-        <div class="main-content-header">
-          <h1>Data Angkut</h1>
-        </div>
-
-        <div class="main-content">
-          <h1>Selamat datang</h1>
-          <div class="main-content-bio">
-            <div id="user-data">
-              <p><strong>Nama:</strong> <span id="nama-pengguna"></span></p>
-              <p>
-                <strong>Tanggal Lahir:</strong>
-                <span id="tanggal-pengguna"></span>
-              </p>
-              <p><strong>Alamat:</strong> <span id="alamat-pengguna"></span></p>
-              <p>
-                <strong>Nomor Telepon:</strong>
-                <span id="nomor-telepon-pengguna"></span>
-              </p>
-            </div>
-
-            <div class="main-content-pickup">
-              <button
-                type="submit"
-                class="main__content__pickup-truck"
-                name="vehicle"
-              >
-                <img src="../img/truck.png" alt="truck" />
-                <div class="main__content__pickup__truck-text">
-                  <a href="#">Penjemputan menggunakan truck</a>
-                  <label for="alamat">---</label>
-                </div>
-              </button>
-              <!-- <form id="penjemputanForm">
-                <label for="jenisPenjemputan">Pilih Jenis Penjemputan:</label>
-                <select id="jenisPenjemputan" name="jenisPenjemputan">
-                  <option value="truck">Truck</option>
-                  <option value="amroll">Amroll</option>
-                </select>
-              
-                <label for="lokasi">Lokasi Penjemputan:</label>
-                <input type="text" id="lokasi" name="lokasi" />
-              
-                <button type="submit">Ajukan Penjemputan</button>
-              </form>
-
-              <div id="statusMessage"></div> -->
-
-              <div>
-                <label for="pickupType">Pilih Jenis Penjemputan:</label>
-                <button id="truck">Truck</button>
-                <button id="amroll">Amroll</button>
-              </div>
-              <ul id="notifications"></ul>
-              <button
-                type="submit"
-                class="main__content__pickup-amroll"
-                name="vehicle"
-              >
-                <img src="../img/amroll.png" alt="amroll" />
-                <div class="main__content__pickup__amroll-text">
-                  <a href="#">Penjemputan menggunakan amroll</a>
-                  <label for="alamat">---</label>
-                </div>
-              </button>
-
-              <button>
-                <a href="../dashboard/dashboard-history.html">ini button</a>
-              </button>
-            </div>
-          </div>
-        </div>
-      </main>
-      <footer>
-        <img src="../img/home-button.png" alt="home" />
-        <img src="../img/button-go.png" alt="go-butoon" />
-        <img src="../img/profile-button.png" alt="profile" />
-      </footer>
-    </div>
+      </div>
+    </main>
 
     <script src="../script/user-data.js"></script>
     <script src="../script/script.js"></script>
@@ -126,5 +71,6 @@
     <script src="../utils/hamburger-button.js"></script>
     <script src="../script/user_submissions.js"></script>
     <script src="../script/history-user.js"></script>
+    <script src="../script/admin-data-user.js"></script>
   </body>
 </html>

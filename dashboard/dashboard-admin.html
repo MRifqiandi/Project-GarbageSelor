@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -6,7 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="../styles/dashboard-admin.css" />
     <link rel="stylesheet" href="../styles/dashboard-admin.css" />
-    <!-- <link rel="stylesheet" href="style-date-time.css"> -->
+    <link rel="stylesheet" href="style-date-time.css">
   </head>
   <body onload="initClock()">
     <div class="container">
@@ -55,41 +55,19 @@
         </div>
         <div class="main-content">
           <div class="main-content-bio">
-            <!-- <ul>
-              <li id="name">
-                <label for="name">Nama</label>
-                <h1 name="name">Muhammad Rifqiandi</h1>
-              </li>
-              <li id="date-main-content">
-                <label for="date-main-content">Tanggal</label>
-                <h1 name="date-main-content">23 Agustus 2003</h1>
-              </li>
-              <li id="vehicle">
-                <label for="vehicle">Jenis Kendaraan</label>
-                <h1 name="vehicle">-</h1>
-              </li>
-              <li id="count">
-                <label for="count">Banyak Angkutan</label>
-                <h1 name="count">-</h1>
-              </li>
-            </ul> -->
-            <!-- <div class="main-content-pickup">
-              <button
-                type="submit"
-                class="main__content__pickup-truck"
-                id="rejectButton"
-              >
-                Tolak Penjemputan
-              </button>
-              <button
-                type="submit"
-                class="main__content__pickup-amroll"
-                id="approveButton"
-              >
-                Terima Penjemputan
-              </button>
-            </div> -->
-
+            <div id="user-data">
+              <p><strong>Nama:</strong> <span id="nama-pengguna"></span></p>
+              <p>
+                <strong>Tanggal Lahir:</strong>
+                <span id="tanggal-pengguna"></span>
+              </p>
+              <p><strong>Alamat:</strong> <span id="alamat-pengguna"></span></p>
+              <p>
+                <strong>Nomor Telepon:</strong>
+                <span id="nomor-telepon-pengguna"></span>
+              </p>
+              <button id="getDataButton">Ambil Data</button>
+            </div>
             <div class="main-content-pickup">
               <input
                 type="text"
@@ -125,8 +103,69 @@
     <script src="../utils/hamburger-button.js"></script>
     <script src="../utils/date.js"></script>
     <script src="../script/admin_submissions.js"></script>
+    <script src="../script/admin_confirmations.js"></script>
+    <script src="../script/admin-data-user.js"></script>
 
-    <!-- <script src="../script/admin_notifications.js"></script> -->
-    <!-- <script src="../script/admin-add-user.js"></script> -->
+    <script src="../script/admin_notifications.js"></script>
+    <script src="../script/admin-add-user.js"></script>
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GarBage - Truk Sampah Tanjung Selor</title>
+    <link rel="stylesheet" href="../styles/dashboard-admin.css" />
+  </head>
+  <body onload="initClock()">
+    <div class="container">
+      <header>
+        <h1>GarBage</h1>
+        <p>Truk Sampah Tanjung Selor</p>
+      </header>
+      <main>
+        <div class="main-content-header">
+          <h1>Data Angkut</h1>
+        </div>
+        <ul id="notifications"></ul>
+        <div>
+          <label for="accept">Terima:</label>
+          <input type="radio" name="action" id="accept" value="terima" />
+          <label for="reject">Tolak:</label>
+          <input type="radio" name="action" id="reject" value="tolak" />
+          <button id="process">Submit</button>
+        </div>
+        <div class="main-content-bio">
+          <h1>Nama: <span id="nama-pengguna"></span></h1>
+          <h1>Tanggal Lahir: <span id="tanggal-pengguna"></span></h1>
+          <h1>Alamat: <span id="alamat-pengguna"></span></h1>
+          <h1>Nomor Telepon: <span id="nomor-telepon-pengguna"></span></h1>
+          <button id="getDataButton">Ambil Data</button>
+          <div class="main-content-pickup">
+            <input
+              type="text"
+              id="messageInput"
+              placeholder="Masukkan pesan untuk driver..."
+            />
+            <button type="submit" id="sendMessageButton">
+              Kirim Pesan ke Driver
+            </button>
+            <h2>Riwayat Penjemputan</h2>
+            <ul id="pickupHistory"></ul>
+          </div>
+        </div>
+        <div id="button-add-user" class="button-add-user">
+          <button type="submit">Tambah Pengguna</button>
+        </div>
+      </main>
+    </div>
+    <script src="../script/admin.js"></script>
+    <script src="../utils/hamburger-button.js"></script>
+    <script src="../utils/date.js"></script>
+    <script src="../script/admin_submissions.js"></script>
+    <script src="../script/admin_confirmations.js"></script>
+    <script src="../script/admin-data-user.js"></script>
   </body>
 </html>
