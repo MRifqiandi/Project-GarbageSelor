@@ -5,5 +5,13 @@
     "express": "^4.18.2",
     "websocket": "^1.0.34",
     "ws": "^8.14.2"
+  },
+  "scripts": {
+    "start": "concurrently \"npm run start-backend1\" \"npm run start-backend2\"",
+    "start-backend1": "node server-notifications-driver.js",
+    "start-backend2": "node server-pickup.js"
+  },
+  "devDependencies": {
+    "concurrently": "^7.0.0"
   }
 }
