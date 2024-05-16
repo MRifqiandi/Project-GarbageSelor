@@ -3,7 +3,7 @@
 $host = "localhost";
 $username = "root";
 $password = "";
-$database = "garbage-selor"; // Ganti dengan nama database Anda
+$database = "dlh"; // Ganti dengan nama database Anda
 
 $conn = new mysqli($host, $username, $password, $database);
 

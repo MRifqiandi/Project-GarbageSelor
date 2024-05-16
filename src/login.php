@@ -15,7 +15,7 @@ if (mysqli_num_rows($result) > 0) {
     if ($role === 'admin') {
         header("Location: ../dashboard/dashboard-admin.html");
     } elseif ($role === 'user') {
-        header("Location: ../dashboard/dashboard-pickup.html");
+        header("Location: ../dashboard/dashboard-user.html");
     } elseif ($role === 'driver') {
         header("Location: ../dashboard/dashboard-driver.html");
     } else {

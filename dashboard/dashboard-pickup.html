@@ -1,12 +1,10 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="../styles/dashboard-pickup.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GarBage - Truk Sampah Tanjung Selor</title>
+    <link rel="stylesheet" href="../styles/dashboard-pickup.css" />
   </head>
   <body>
     <main class="container">
@@ -31,7 +29,7 @@
           <div id="user-data">
             <p><strong>Nama:</strong> <span id="nama-pengguna"></span></p>
             <p>
-              <strong>Tanggal Lahir:</strong>
+              <strong>Tanggal:</strong>
               <span id="tanggal-pengguna"></span>
             </p>
             <p><strong>Alamat:</strong> <span id="alamat-pengguna"></span></p>
@@ -57,6 +55,10 @@
               amroll
             </button>
             <ul id="notifications"></ul>
+            <div id="waitMessage" style="display: none">Silahkan tunggu...</div>
+            <button id="konfirmasi" onclick="sendConfirmation()">
+              Konfirmasi Selesai
+            </button>
             <button>
               <a href="../dashboard/dashboard-history.html">History</a>
             </button>
@@ -68,9 +70,9 @@
     <script src="../script/user-data.js"></script>
     <script src="../script/script.js"></script>
     <script src="../utils/date.js"></script>
-    <script src="../utils/hamburger-button.js"></script>
+    <!-- <script src="../utils/hamburger-button.js"></script> -->
     <script src="../script/user_submissions.js"></script>
-    <script src="../script/history-user.js"></script>
+    <!-- <script src="../script/history-user.js"></script> -->
     <script src="../script/admin-data-user.js"></script>
   </body>
 </html>

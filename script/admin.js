@@ -45,5 +45,5 @@ function sendMessage(message) {
 document
   .getElementById("button-add-user")
   .addEventListener("click", function () {
-    window.location.href = "admin-add-user.html";
+    window.location.href = "../dashboard/admin-add-user.html";
   });

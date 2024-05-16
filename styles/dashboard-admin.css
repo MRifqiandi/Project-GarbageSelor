@@ -54,6 +54,58 @@ main {
   font-size: 28px;
 }
 
+/* .form-data {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10em;
+} */
+
+.data-user {
+  background-color: #5fa372;
+  padding: 1em 2em;
+  border-radius: 12px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+/* CSS */
+button {
+  background: #186f65;
+  border: 1px solid #ffffff;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito, roboto, proxima-nova, "proxima nova", sans-serif;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+button:hover,
+button:active {
+  background-color: #89faa9;
+  background-position: 0 0;
+  color: #06d43d;
+}
+
+button:active {
+  opacity: 0.5;
+}
+
 /* Styling for notifications */
 #notifications {
   list-style: none;
@@ -70,8 +122,70 @@ input[type="radio"] {
   margin-right: 10px;
 }
 
+.aggrement {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  padding: 2em;
+  border-radius: 12px;
+  background-color: #3498db;
+}
+
+label {
+  background-color: #93faa6;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  padding: 1em;
+  border-radius: 12px;
+}
+
+/* Style umum untuk radio button */
+input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+}
+
+/* Gaya dasar label radio */
+input[type="radio"] + label {
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 20px;
+  margin-right: 20px; /* Jarak antara setiap radio button */
+}
+
+/* Gaya label sebelum radio terpilih */
+input[type="radio"]:checked + label:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #3498db; /* Warna border saat terpilih */
+  border-radius: 50%;
+  background-color: #3498db; /* Warna latar belakang saat terpilih */
+}
+
+/* Gaya label setelah radio terpilih */
+input[type="radio"]:checked + label:after {
+  content: "\2022"; /* Tanda centang */
+  position: absolute;
+  left: 6px;
+  top: 2px;
+  font-size: 18px;
+  color: #fff; /* Warna tanda centang saat terpilih */
+}
+
+/* Efek hover untuk label radio */
+input[type="radio"] + label:hover:before {
+  border-color: #2980b9; /* Warna border saat hover */
+}
+
 #process {
-  background-color: #186F65;
+  background-color: #186f65;
   color: #fff;
   border: none;
   padding: 10px 20px;
@@ -92,6 +206,9 @@ input[type="radio"] {
 /* Styling for main content pickup */
 .main-content-pickup {
   margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 #messageInput {
@@ -103,7 +220,7 @@ input[type="radio"] {
 }
 
 #sendMessageButton {
-  background-color: #186F65;
+  background-color: #186f65;
   color: #fff;
   border: none;
   padding: 10px 20px;
@@ -128,7 +245,7 @@ h2 {
 }
 
 #button-add-user button {
-  background-color: #186F65;
+  background-color: #186f65;
   color: #fff;
   border: none;
   padding: 10px 20px;
@@ -139,7 +256,7 @@ h2 {
 footer {
   text-align: center;
   padding: 20px;
-  background-color: #186F65;
+  background-color: #186f65;
 }
 
 footer img {

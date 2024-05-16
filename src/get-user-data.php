@@ -3,7 +3,7 @@
 $host = "localhost";
 $username = "root";
 $password = "";
-$database = "garbage-selor"; // Ganti dengan nama database Anda
+$database = "dlh"; // Ganti dengan nama database Anda
 
 $conn = new mysqli($host, $username, $password, $database);
 
@@ -11,7 +11,7 @@ if ($conn->connect_error) {
     die("Koneksi gagal: " . $conn->connect_error);
 }
 
-$username = "andi"; // Ganti dengan username pengguna yang sedang login
+$username = "user1"; // Ganti dengan username pengguna yang sedang login
 
 $query = "SELECT * FROM user WHERE username = '$username'";
 $result = $conn->query($query);

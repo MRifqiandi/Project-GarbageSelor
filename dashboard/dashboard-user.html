@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/test.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Krona+One&family=Poppins:wght@200;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Graduate&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+
+    <title>GarBage - Truk Sampah Tanjung Selor</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="title">
+          <h1>GarBageSelor</h1>
+        </div>
+        <div class="date-time">
+          <div class="tanggal-hari">
+            <span id="hari"></span> ,
+            <span id="tanggal"></span>
+            <span id="bulan"></span>
+            <span id="tahun"></span>
+          </div>
+          <div class="jam">
+            <span id="waktu"></span>
+          </div>
+        </div>
+      </header>
+      <main>
+        <div class="main-content-title">
+          <div class="main-title">
+            <h1>Halo</h1>
+            <p>
+              Buanglah sampah pada tempatnya untuk menyelamatkan rumah kita,
+              Bumi.
+            </p>
+          </div>
+          <div class="moving-image">
+            <img id="foto" src="../moving-image/foto1.jpg" alt="Foto" />
+            <button class="tombol-ganti" onclick="gantiFoto()">
+              <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="main-line">
+          <div class="garis"></div>
+          <div class="garis"></div>
+          <div class="garis"></div>
+          <h1>Features</h1>
+        </div>
+
+        <div class="features">
+          <button id="pickup-button">
+            <img src="../img/delivery-truck.png" alt="pickup" /> Pickup
+          </button>
+
+          <div class="separator"></div>
+          <button id="quiz-button">
+            <img src="../img/quiz-icons.png" alt="quiz" />
+            Quiz
+          </button>
+        </div>
+      </main>
+    </div>
+    <script src="../script/coor.js"></script>
+    <script src="../script/user-data.js"></script>
+    <script src="../script/script.js"></script>
+    <script src="../utils/date.js"></script>
+    <script src="../utils/hamburger-button.js"></script>
+    <script src="../script/user_submissions.js"></script>
+    <script src="../script/history-user.js"></script>
+    <script src="../script/admin-data-user.js"></script>
+    <script src="../script/image_moving.js"></script>
+  </body>
+</html>
